@@ -6,10 +6,11 @@ import { FaGripfire, FaPlay } from "react-icons/fa";
 import { FaSignOutAlt } from "react-icons/fa";
 import { IoLibrary } from "react-icons/io5";
 import { MdSpaceDashboard } from "react-icons/md";
+import Logo from "../Img/logo.png";
 export default function Sidebar() {
   return (
     <div className='sidebar-container'>
-        <img src="https://www.freecodecamp.org/news/content/images/size/w2000/2021/08/imgTag.png" className='profile-img' alt='profile'/>
+        <img  src={Logo} className='logo' alt='Logo'/>
         <div>
         <SidebarButton title="Feed" to="/feed" icon={<MdSpaceDashboard/>} />
         <SidebarButton title="Trending" to="/trending" icon={<FaGripfire />} />
